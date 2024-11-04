@@ -65,3 +65,9 @@ The Nature of Data
 
 Data scientists work with diverse data types, including structured (tables) and unstructured (emails, logs) formats, utilizing various tools like Hadoop and JSON.
 Curiosity is a key trait of successful data scientists, enabling them to transform unstructured data into valuable insights.
+
+## Understanding Digital Transformation
+
+Digital transformation involves updating existing processes and creating new ones to leverage the benefits of new technologies, leading to significant changes in how organizations operate and deliver value.
+It is driven by the analysis of vast amounts of data, particularly Big Data, which provides a competitive advantage across various industries.
+
