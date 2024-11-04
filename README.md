@@ -29,7 +29,7 @@ Identifying your competitive advantage
 Determine your area of interest or expertise, as this will guide the specific analytical skills you need to acquire.
 Your competitive advantage may lie in your understanding of a particular field, such as health, IT, or retail, which can enhance your effectiveness as a data scientist
 
-##Understanding Delimited Text File Formats
+## Understanding Delimited Text File Formats
 
 Delimited text files store data as text with values separated by a delimiter, commonly a comma (CSV) or tab (TSV). Each row represents a record, and the first row serves as a column header.
 These files allow for field values of any length and are widely compatible with existing applications, making them a standard format for data representation.
