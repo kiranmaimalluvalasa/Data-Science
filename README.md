@@ -41,3 +41,18 @@ Key Features of JSON and PDF
 
 JavaScript Object Notation (JSON) is a lightweight, language-independent format ideal for transmitting structured data over the web, widely used in APIs and web services.
 Portable Document Format (PDF) is designed to present documents consistently across devices, making it popular for legal and financial documents.
+
+## Understanding Regression
+
+Regression helps to identify relationships between variables, such as the base fare of a taxi ride and how it changes with distance and time.
+It simplifies complex data relationships into understandable terms, allowing for better decision-making based on data.
+
+## Data Visualization
+
+Data visualization is crucial for effectively communicating data insights to those unfamiliar with data science.
+Tools like R can be used to create visual representations that make data more accessible and understandable.
+
+### Structured vs. Unstructured Data
+
+Structured data is organized in a tabular format, similar to what you would find in Excel, making it easier to analyze.
+Unstructured data, such as text, video, and audio, requires more sophisticated algorithms to extract meaningful information, often necessitating additional effort to structure it for analysis.
