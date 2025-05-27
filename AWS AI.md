@@ -80,8 +80,96 @@ Model Size: Larger models are generally slower.
 
 Model Type: Different models (e.g., Claude vs. Llama) have varying performance.
 
+
 Input Tokens: More context (longer prompts) means more time to process.
 
 Output Length: Longer responses take more time to generate.
 
 Important Note: Latency is not impacted by Temperature, Top P, or Top K.
+
+Prompt Engineering Techniques
+In this lecture, we explore several prompt engineering techniques that can be used to enhance the quality and precision of responses from generative AI models like those used in Amazon Bedrock.
+
+1. Zero-Shot Prompting
+Definition: Asking a model to perform a task without providing any examples.
+
+Example Prompt:
+"Write a short story about a dog that helps solve a mystery."
+
+Behavior: The model relies entirely on its pretrained general knowledge.
+
+Best Use: When the task is simple or the model is highly capable.
+
+2. Few-Shot Prompting
+Definition: Providing a few examples of the task to guide the model’s output.
+
+Example:
+
+Provide two example stories:
+
+Whiskers the Cat solving a mystery.
+
+Buddy the Bird solving a mystery.
+
+Then prompt:
+"Write a short story about a dog that helps solve a mystery."
+
+Behavior: The model learns from patterns in the examples.
+
+Variants:
+
+One-Shot Prompting: Providing one example.
+
+Few-Shot Prompting: Providing multiple examples.
+
+Best Use: When you want the model to follow a specific format or tone.
+
+3. Chain-of-Thought Prompting
+Definition: Prompting the model to generate step-by-step reasoning or follow a structured process.
+
+Prompt Example:
+"First describe the setting and the dog, then introduce the mystery, next show how the dog discovers clues, and finally reveal how the dog solves the mystery."
+
+Phrase Tip: Use “Think step by step” to trigger logical reasoning.
+
+Behavior: Helps generate more coherent and logical outputs.
+
+Best Use: For tasks that involve complex reasoning or multi-step logic.
+
+4. Retrieval-Augmented Generation (RAG)
+Definition: Combines the model’s generation capabilities with external data sources.
+
+Workflow:
+
+User prompt is issued.
+
+Relevant information is retrieved from external data (e.g., documents, databases).
+
+The data is injected into the prompt.
+
+The model generates a response using both its knowledge and the augmented context.
+
+Example:
+
+Prompt:
+"Write a story about a dog solving a mystery using the following information:"
+
+Context:
+
+Dogs have an excellent sense of smell.
+
+Neighborhood thefts often involve missing items.
+
+Dogs can track scents over long distances.
+
+Behavior: The output reflects contextual knowledge from the external data.
+
+Best Use: When domain-specific or up-to-date knowledge is required.
+
+Summary of Techniques
+Technique	Description	Best Use Case
+Zero-Shot	No examples; uses general model knowledge	Simple or general tasks
+Few-Shot	Guided with 1 or more examples	Tasks needing specific tone/format
+Chain-of-Thought	Step-by-step reasoning or instructions	Tasks involving logic or structured output
+RAG	Uses external data to enhance prompt context	Domain-specific or data-heavy tasks
+
