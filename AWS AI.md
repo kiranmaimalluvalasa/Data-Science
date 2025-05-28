@@ -200,3 +200,80 @@ Amazon Q searches internal documents (e.g., PDFs) to find and present accurate a
 Amazon Q Developer is a powerful new service from AWS that operates in two major areas: natural language interaction with AWS and AI-powered code assistance. On the one hand, it allows users to query AWS documentation and their own AWS accounts using plain English. For instance, a developer can ask, “List all my Lambda functions,” and Amazon Q Developer will respond with detailed information such as, “You have five Lambda functions in the us-east-1 region,” and list their names. This is especially useful for developers managing multiple resources across different regions. Beyond information retrieval, Amazon Q can suggest accurate AWS CLI commands to help execute actions like modifying function timeouts, without having to write commands from scratch. It also provides billing analysis and troubleshooting capabilities. For example, users can ask, “What were the top three highest cost services in Q1?” and receive a breakdown that might include Amazon SageMaker, ECS, and AWS Config, along with associated costs.
 
 On the other hand, Amazon Q Developer acts as an AI coding assistant, similar to GitHub Copilot but specialized for AWS development. Developers can request code generation such as, “Write Python code to list files in an S3 bucket,” and Amazon Q will produce functional code with parameter support. It supports multiple programming languages, including Python, Java, JavaScript, TypeScript, and C#, with more to come. Integrated with popular IDEs like Visual Studio Code, Visual Studio, and JetBrains, Amazon Q Developer enhances productivity through real-time code suggestions, code completion, security scanning, debugging, optimization, and even project bootstrapping. It helps developers answer AWS-specific development questions, implement features, and generate documentation automatically, significantly accelerating the development process.
+
+5/28
+🔁 How AI Works – The Stack
+Data Layer: Collect and prepare data (role of data engineers, data scientists)
+
+ML Framework Layer: Define the algorithm and approach (e.g., regression, classification)
+
+Model Layer: Train and fine-tune the model (adjust parameters)
+
+Application Layer: Deploy and expose the model to users (API, UI)
+
+🤖 Machine Learning (ML)
+ML enables machines to learn from data without being explicitly programmed.
+
+Examples:
+
+Regression: Predicting trends from continuous data
+
+Classification: Categorizing data based on learned boundaries
+
+🧠 Deep Learning (DL)
+A subset of ML using artificial neural networks inspired by the human brain.
+
+Involves input, hidden, and output layers
+
+Requires large datasets and high computational power (GPUs)
+
+Enables tasks like:
+
+Image recognition
+
+Speech recognition
+
+Natural language processing (NLP)
+
+Neural Network Example:
+
+Input: Pixel values of a handwritten digit
+
+Hidden Layers: Learn features like lines or curves
+
+Output: Predicts digit (e.g., “8”)
+
+🔬 Generative AI (GenAI)
+A subset of deep learning focused on generating new content.
+
+Based on transformer models
+
+Processes entire sentences efficiently
+
+Learns patterns and relationships between words
+
+Used in:
+
+Text generation (ChatGPT, BERT)
+
+Image generation (Diffusion models)
+
+Multimodal models (combine text, audio, images, video)
+
+🧩 Comparison: Traditional AI vs ML vs DL vs GenAI
+Type	What it Does	Example
+AI (Rules-Based)	If-then rules	Fire safety system
+ML	Learns patterns	Dog vs. cat classifier
+DL	Learns abstract patterns	Identify a tiger without seeing one before
+GenAI	Generates creative content	Write a poem or generate a video from text and image
+
+🧠 Final Thought
+Humans display capabilities similar to all these AI levels:
+
+We follow rules (AI)
+
+We learn from experience (ML)
+
+We generalize from patterns (DL)
+
+We create new ideas (GenAI)
