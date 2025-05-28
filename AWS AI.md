@@ -276,3 +276,13 @@ We learn from experience (ML)
 We generalize from patterns (DL)
 
 We create new ideas (GenAI)
+
+Text Models: GPT, BERT
+
+Image Models: ResNet, GAN
+
+Audio Models: WaveNet
+
+Traditional ML: SVM, XGBoost
+
+Sequence Data: RNN
