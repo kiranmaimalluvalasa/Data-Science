@@ -173,3 +173,26 @@ Few-Shot	Guided with 1 or more examples	Tasks needing specific tone/format
 Chain-of-Thought	Step-by-step reasoning or instructions	Tasks involving logic or structured output
 RAG	Uses external data to enhance prompt context	Domain-specific or data-heavy tasks
 
+Amazon Q Business Overview
+Amazon Q Business is a fully managed generative AI assistant designed specifically for organizations. It helps employees interact with internal company knowledge and data securely and intelligently.
+
+Key Features and Capabilities
+Company-Specific Knowledge: Trained on your internal data (not general internet knowledge).
+
+Use Cases:
+
+Writing job postings or social media content.
+
+Summarizing meetings or querying internal documents.
+
+Automating tasks like submitting time-off requests or creating meeting invites.
+
+Built on Amazon Bedrock:
+
+Uses multiple foundation models behind the scenes.
+
+Foundation model selection is abstracted away from the user.
+
+Retrieval-Augmented Generation (RAG):
+
+Amazon Q searches internal documents (e.g., PDFs) to find and present accurate answers with source references.
