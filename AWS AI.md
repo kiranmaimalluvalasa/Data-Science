@@ -310,4 +310,51 @@ Use that model to pseudo-label the unlabeled data.
 Combine everything and retrain the model as if it were supervised learning.
 
 This approach is practical when labeled data is expensive or scarce but unlabeled data is abundant.
+ ## Reinforcement Learning (RL) – Executive Summary
+#### 🧩 Basic Concept
+Reinforcement Learning is a type of machine learning where an agent learns to make decisions by interacting with an environment to maximize cumulative reward over time.
+
+###🎯 Key Terminology
+Term	Meaning
+Agent	The learner or decision-maker (e.g., robot in a maze).
+Environment	Everything the agent interacts with (e.g., the maze).
+Action	What the agent can do (e.g., move up/down/left/right).
+State	The current situation the agent is in (e.g., its location).
+Reward	Feedback from the environment (e.g., +100 for exit, -10 for wall).
+Policy	The strategy the agent uses to decide which action to take.
+Transition	Moving from one state to another based on an action.
+Cumulative Reward	Total points accumulated over time — what the agent tries to maximize.
+
+### 🔁 The Learning Loop
+Observe current state.
+
+Choose an action (based on current policy).
+
+Perform the action → environment transitions to new state.
+
+Receive a reward.
+
+Update policy based on experience.
+
+Repeat (many times) → agent improves over time.
+
+### 🎮 Simple Example (Maze)
+Move to a valid tile: -1 reward
+
+Hit a wall: -10 reward
+
+Find the exit: +100 reward
+
+Goal: Learn to get to the exit efficiently (shortest path with least penalties).
+
+### 📈 Real-World Applications
+🕹️ Games: AI playing Go, Chess, or video games.
+
+🤖 Robotics: Navigation and object manipulation.
+
+💰 Finance: Optimizing trading strategies.
+
+🚑 Healthcare: Personalized treatment planning.
+
+🚗 Self-Driving Cars: Route planning and decision-making.
 
