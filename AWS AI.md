@@ -288,3 +288,26 @@ Traditional ML: SVM, XGBoost
 Sequence Data: RNN
 
 In supervised learning, the goal is to train a machine learning model using labeled data, meaning each input has a known output. The model learns to predict outputs for new, unseen inputs by identifying patterns in the training data. Supervised learning includes two main types: regression, which predicts continuous numerical values (e.g., predicting weight from height or house prices from size), and classification, which assigns inputs to discrete categories (e.g., identifying an animal as a dog, cat, or giraffe based on features like height and weight, or classifying emails as spam or not spam). The data used in supervised learning is typically split into three sets: a training set (60–80%) to teach the model, a validation set (10–20%) to fine-tune parameters, and a test set (10–20%) to evaluate performance. Additionally, feature engineering plays a vital role by transforming raw data into meaningful inputs—like converting birth dates into age or extracting sentiment from text—to improve model performance. Feature engineering can be applied to both structured (like tabular data) and unstructured data (like text or images) and includes techniques such as feature extraction, selection, and transformation.
+
+## 🔍 Unsupervised Learning
+Unsupervised learning works with unlabeled data, meaning the model doesn’t know the "correct answers" but tries to uncover hidden patterns or groupings in the data on its own. The model outputs structures or clusters that humans can later interpret.
+
+Key techniques:
+
+Clustering: Groups similar data points (e.g., customer segmentation to target marketing).
+
+Association Rule Learning: Finds relationships between items (e.g., "People who buy bread also buy butter" → used in retail placement).
+
+Anomaly Detection: Identifies data points that differ significantly from the norm (e.g., spotting fraudulent transactions).
+
+## 🧠 Semi-Supervised Learning
+This is a mix between supervised and unsupervised learning. It starts with a small set of labeled data and a large set of unlabeled data. The process:
+
+Train a model on the small labeled set.
+
+Use that model to pseudo-label the unlabeled data.
+
+Combine everything and retrain the model as if it were supervised learning.
+
+This approach is practical when labeled data is expensive or scarce but unlabeled data is abundant.
+
