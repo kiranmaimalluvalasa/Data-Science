@@ -358,3 +358,39 @@ Goal: Learn to get to the exit efficiently (shortest path with least penalties).
 
 🚗 Self-Driving Cars: Route planning and decision-making.
 
+### 🔧 How RLHF Works (Step-by-Step)
+#### 1. Pretraining (Supervised Learning)
+The model (like GPT) is first trained on large text datasets from books, websites, etc.
+
+It learns to predict the next word — basic language understanding.
+
+#### 2. Collect Human Feedback
+Humans interact with the model.
+
+For a given input (prompt), the model generates multiple outputs (responses).
+
+Human labelers rank these outputs from best to worst.
+
+Example:
+
+vbnet
+Copy
+Edit
+Prompt: "How do I make tea?"
+Responses:
+1. "Boil water, steep a teabag..."
+2. "Why would you want tea?"
+3. "Tea is a popular beverage."
+
+Labelers may rank (1) > (3) > (2).
+#### 3. Train a Reward Model
+A new model (called a reward model) is trained to predict these rankings.
+
+It learns: What kind of output do humans prefer?
+
+#### 4. Reinforcement Learning (PPO)
+The original language model is now fine-tuned using reinforcement learning.
+
+The reward model gives a reward score to outputs.
+
+A technique like Proximal Policy Optimization (PPO) is used to adjust the model’s behavior to maximize human-like responses.
