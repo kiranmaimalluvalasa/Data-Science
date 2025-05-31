@@ -395,6 +395,54 @@ The reward model gives a reward score to outputs.
 
 A technique like Proximal Policy Optimization (PPO) is used to adjust the model’s behavior to maximize human-like responses.
 
+
+## 🔍 Evaluating Machine Learning Models
+🟩 For Binary Classification Models
+📊 Confusion Matrix
+A 2x2 table to compare:
+
+Predicted vs Actual values
+
+Actual Positive (Spam)	Actual Negative (Not Spam)
+##### Predicted Positive	                 ✅ True Positive (TP)	             ❌ False Positive (FP)
+##### Predicted Negative	                 ❌ False Negative (FN)            	✅ True Negative (TN)
+
+📐 Key Classification Metrics
+Metric	Formula	When to Use
+Precision	TP / (TP + FP)	When false positives are costly (e.g., spam filter)
+Recall	TP / (TP + FN)	When false negatives are costly (e.g., disease detection)
+F1 Score	2 × (Precision × Recall) / (Precision + Recall)	Good balance between precision and recall
+Accuracy	(TP + TN) / (Total Samples)	Only reliable on balanced datasets
+
+✅ Spam/Not Spam is an imbalanced dataset, so avoid relying on accuracy.
+
+### 📈 AUC-ROC (Area Under the Receiver Operating Curve)
+Sensitivity (TPR) = True Positives / (True Positives + False Negatives)
+
+1 - Specificity (FPR) = False Positives / (False Positives + True Negatives)
+
+### Interpretation:
+
+AUC close to 1 = Strong model
+
+AUC around 0.5 = Random model
+
+Used to compare models across thresholds
+
+🟦 For Regression Models
+📏 Key Regression Metrics
+Metric	Measures	Notes
+MAE (Mean Absolute Error)	Avg. absolute difference between actual and predicted	Easy to interpret
+MAPE (Mean Absolute Percentage Error)	Avg. percentage error	Good for comparing across scales
+RMSE (Root Mean Squared Error)	Penalizes larger errors more than MAE	Smooths errors
+R² (R-Squared)	Proportion of variance explained by the model	Close to 1 = good fit
+
+💡 Example:
+
+RMSE = 5 → Model is on average 5 points off
+
+R² = 0.8 → 80% of score variation is explained by the model inputs
+
 🔍 Inferencing in Machine Learning
 Inferencing is when a trained model makes predictions on new data. There are different types of inferencing, each suited for specific use cases:
 
