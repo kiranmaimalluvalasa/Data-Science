@@ -394,3 +394,74 @@ The original language model is now fine-tuned using reinforcement learning.
 The reward model gives a reward score to outputs.
 
 A technique like Proximal Policy Optimization (PPO) is used to adjust the model’s behavior to maximize human-like responses.
+
+🔍 Inferencing in Machine Learning
+Inferencing is when a trained model makes predictions on new data. There are different types of inferencing, each suited for specific use cases:
+
+#### 1. ⚡ Real-Time Inferencing
+Purpose: Immediate response to user input.
+
+Use Case: Chatbots, recommendation engines, fraud detection.
+
+Characteristics:
+
+Prioritizes speed over perfect accuracy.
+
+Needs to respond quickly to input as it happens.
+
+Example: Typing into a chatbot and getting an instant response.
+
+##### 2. 🧮 Batch Inferencing
+Purpose: Analyze large volumes of data at once.
+
+Use Case: Business intelligence, reporting, model evaluation.
+
+Characteristics:
+
+Prioritizes accuracy over speed.
+
+Can take minutes, hours, or even days to process.
+
+Results are returned after processing is complete.
+
+#### 3. 🌐 Edge Inferencing
+Purpose: Run models directly on devices near the data source.
+
+Use Case: IoT devices, mobile apps, remote sensors.
+
+Characteristics:
+
+Edge devices (e.g., Raspberry Pi, mobile phones) typically have limited compute power.
+
+Ideal for low-latency, offline usage.
+
+Uses Small Language Models (SLMs) or compressed models.
+
+Benefits:
+
+Local processing = fast inference
+
+No internet needed
+
+Low power and compute footprint
+
+#### 4. 🌍 Remote Inferencing (Cloud-Based)
+Purpose: Use powerful models from remote servers.
+
+Use Case: Using full-scale LLMs via APIs (e.g., Amazon Bedrock).
+
+Characteristics:
+
+Edge devices send requests to a server over the internet.
+
+Supports larger, more accurate models.
+
+Trade-offs:
+
+Higher latency
+
+Requires internet connection
+
+Edge devices act as thin clients.
+
+
