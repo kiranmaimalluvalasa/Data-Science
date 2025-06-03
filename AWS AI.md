@@ -513,4 +513,47 @@ Requires internet connection
 Edge devices act as thin clients.
 
 ### AWS Managed AI Service
-### streak :<
+
+### Amazon Comprehend – Overview
+Amazon Comprehend is a fully managed, serverless NLP (Natural Language Processing) service that uses machine learning to:
+
+-> Detect language
+-> Extract key phrases, people, places, brands, or events
+-> Determine sentiment (positive/negative/neutral)
+-> Perform tokenization and part-of-speech analysis
+-> Organize documents by topics (topic modeling)
+
+### Key Features
+Out-of-the-box NER (Named Entity Recognition):
+Automatically identifies standard entities like:
+People (e.g., Zhang Wei)
+Organizations (e.g., Any Company Financial Services LLC)
+Dates (e.g., July 31st)
+Locations, quantities, etc.
+Sentiment Analysis:
+Detects emotional tone in customer reviews, emails, etc.
+
+#### Custom Classification:
+
+You define categories (e.g., complaints, billing requests)
+Train with labeled examples in S3
+Supports real-time and batch (asynchronous) classification
+Custom Entity Recognition:
+Detect domain-specific entities like:
+Policy numbers
+Escalation indicators
+Requires labeled training data in S3
+
+##### Use Cases
+Analyze customer interactions (e.g., email sentiment)
+Automatically classify incoming support tickets
+Extract key business data (e.g., invoice numbers, escalation cues)
+Group articles or documents by topic
+
+#### Data Formats Supported
+Text
+PDF
+Word documents
+Images (after text extraction using Amazon Textract)
+
+
